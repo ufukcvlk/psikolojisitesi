@@ -425,7 +425,7 @@ def results():
         return (full_star * full_stars) + (half_star * half_stars) + (empty_star * empty_stars)
         
     if recommendation:
-        recommendation.stars = get_star_rating_for_html(recommendation.average_rating)
+        recommendation.stars = get_star_rating_for_html(recommendation.average_rating)        
 
     for t in therapists:
         t.stars = get_star_rating_for_html(t.average_rating)
